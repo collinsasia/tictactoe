@@ -1,17 +1,24 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 60px;
 }
-
-
-
 
 .gameBoard {
     /* using # helps css locate gameBoard (element) */
     display: grid;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 200px 200px 200px;
+    grid: 10px;
     cursor: pointer;
     /* the cursor is a property i will use for my mouse pointer */
 }
 
+/* currently I am using the border-right property to create the lines on the table (refered to W3school */
+.right-border{
+    border-right: 2px black;
+}
+
+.bottom-border{
+    border-right: 2px black;
+}
