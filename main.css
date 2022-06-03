@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.gameBoard {
+    /* using # helps css locate gameBoard (element) */
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    cursor: pointer;
+    /* the cursor is a property i will use for my mouse pointer */
+}
+
