@@ -19,12 +19,6 @@
         h2 {
             text-align:center;
         }
-        .table {
-            display: grid;
-            grid-gap: 10px;
-            grid-template-columns: 200px 200px 200px;
-            grid-template-rows: 200px 200px 200px;
-        }
         .table div {
             padding: 40px;
             background-color: #FF10F0;
@@ -35,22 +29,19 @@
     <h1 class="font-effect-neon"; style="color: orange;">Tic Tac Toe Table</h1>
     <h2 class="font-effect-neon"; style="color: #FF10F0;">Who will lose?</h2>
 
-
-
-    <div class="table">
-        <div class="row">
-            <p>Who will lose?</p>
-            <p id="playerWin"> </p>
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="table" id="gameBoard"> 
+        <!-- here in these 9 divs I am denotating them as data-cell so that it will be easy to reference in js -->
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
     </div>
+    
+
 </body>
 </html>
