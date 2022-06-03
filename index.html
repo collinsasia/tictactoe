@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <script src="index.js"></script>
+    
     <style>
         body{
     font-family: "Sofia" , sans-serif;
@@ -14,25 +16,28 @@
     </style>
 </head>
 <body>
+    <section>
     <h1 class="font-effect-neon"; style="color: orange;">Tic Tac Toe Table</h1>
     <h2 class="font-effect-neon"; style="color: #FF10F0;">Who will lose?</h2>
     <!-- I went ahead and allowed styling within my html for h1 as it seemed more organized there -->
 
-    <div class="table" id="table"> 
-        <div class="cell" data-cell>1</div>
-        <div class="cell" data-cell>2</div>
-        <div class="cell" data-cell>3</div>
-        <div class="cell" data-cell>4</div>
-        <div class="cell" data-cell>5</div>
-        <div class="cell" data-cell>6</div>
-        <div class="cell" data-cell>7</div>
-        <div class="cell" data-cell>8</div>
-        <div class="cell" data-cell>9</div>
+    <div class="table"> 
+        <!-- essientially "data-index " is an attribute i will be using to indentify each area -->
+        <!-- when adding the border to class I individually , it helped with seeing the outline of the table -->
+        <div data-cell-index="1" class="cell">x</div>
+        <div data-cell-index="2" class="cell">x</div>
+        <div data-cell-index="3" class="cell">x</div>
+        <div data-cell-index="4" class="cell">x</div>
+        <div data-cell-index="5" class="cell">x</div>
+        <div data-cell-index="6" class="cell">x</div>
+        <div data-cell-index="7" class="cell">x</div>
+        <div data-cell-index="8" class="cell">x</div>
+        <div data-cell-index="9" class="spot">x</div>
 <!-- here in these 9 divs I am denotating them as data-cell so that it will be easy to reference in js -->
     </div>
-    <div class="winningAlert">
-        <div data-winningAlert></div>
-        <button id="startOverButton">Restart</button>
+        <h2 class="status"></h2>
+        <button class="startOverButton">Restart</button>
+    </section>
     </div>
 </body>
 </html>
