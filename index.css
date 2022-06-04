@@ -1,8 +1,17 @@
-#table {
+.board {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 100px 100px 00px;
     grid-template-rows: 100px 100px 100px;
     cursor: pointer;
+    position: relative;
+}
+
+.cell {
+    color: currentColor;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body{
@@ -31,6 +40,7 @@ body{
 
 .strike{
     position: absolute;
-    
+    background-color: orange;
+
 }
 /* currently adding these two classes to establsih the borders of the divs(table) */
